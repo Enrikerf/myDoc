@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Git root directory to use as a base of repositories to update
-ROOT_DIR=/var/www/v4
+ROOT_DIR=$(pwd)
 
 GREEN=`tput setaf 2`;
 NC=`tput sgr0`;
