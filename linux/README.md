@@ -1,5 +1,16 @@
 # Utilities to install
 
+    > Remember in the SO installation to download thridparties drivers
+
+## terminator
+
+sudo apt-get install terminator
+
+## Chrome
+
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
 ## <ins>Desktop gui</ins>
 
 To get all the tool bars in one, install [Dash](https://extensions.gnome.org/extension/1160/dash-to-panel/)
