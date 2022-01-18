@@ -69,9 +69,11 @@ by default, REGEX uses greedy matching. that means that will search in the whole
 
 ## Common expressions
 
-| expression                                                          | meaning                                                   |     |
-|---------------------------------------------------------------------|-----------------------------------------------------------|-----|
-| ^\[(\d\,)\*(\d+\]){1}$                                              | search every array of numbers in text [1,2,3] in one line |     |
-| ^\d{4}\-(0[1-9]&#x7c;1[012])\-(0[1-9]&#x7c;[12][0-9]&#x7c;3[01])$   |                                                           |     |
+| expression                                                        | meaning                                                   |     |
+|-------------------------------------------------------------------|-----------------------------------------------------------|-----|
+| [a-zA-Z0-9_]                                                      | \w equivalent                                             |     |
+| [0-9]                                                             | \d equivalent                                             |     |
+| ^\[(\d\,)\*(\d+\]){1}$                                            | search every array of numbers in text [1,2,3] in one line |     |
+| ^\d{4}\-(0[1-9]&#x7c;1[012])\-(0[1-9]&#x7c;[12][0-9]&#x7c;3[01])$ |                                                           |     |
 
 
