@@ -6,6 +6,26 @@
 
 sudo apt-get install terminator
 
+	$ sudo vim ~/.config/terminator/config
+``` bash
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+      # add this --> size =  1100, 450
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+[plugins]
+```
+
+
+
 ## Chrome
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
