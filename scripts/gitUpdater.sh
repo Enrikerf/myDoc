@@ -103,7 +103,10 @@ case $1 in
     pull)
         git_pull $ROOT_DIR;
         ;;
-    branch)
+    branch)git rebase -i origin/master~4 master
+and then force push with
+
+git push origin +master
         git_branches $ROOT_DIR;
         ;;
     checkout)
