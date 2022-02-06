@@ -7,4 +7,6 @@ squash on remote
 
 > Tip:  remember to use as pick the top commit
 
+change editor for commits
 
+    $ git config core.editor "vim"
