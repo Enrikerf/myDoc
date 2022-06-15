@@ -52,3 +52,11 @@ to take a Picture
 ## <ins>To paint</ins>
 
     sudo apt-get install drawing
+
+
+
+## gestures
+
+https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop
+
+https://extensions.gnome.org/extension/4245/gesture-improvements/
