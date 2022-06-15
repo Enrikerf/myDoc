@@ -55,8 +55,18 @@ to take a Picture
 
 
 
-## gestures
+## touchpad gestures
+
+
+https://extensions.gnome.org/extension/4245/gesture-improvements/
+
+on X11 that it's the recommended way you must to install 
+
+https://github.com/harshadgavali/gnome-x11-gesture-daemon
+
+
+another way could be to enable Wayland
 
 https://linuxconfig.org/how-to-enable-disable-wayland-on-ubuntu-22-04-desktop
 
-https://extensions.gnome.org/extension/4245/gesture-improvements/
+but it's strongly not recommended
