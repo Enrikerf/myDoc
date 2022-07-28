@@ -10,3 +10,8 @@ squash on remote
 change editor for commits
 
     $ git config core.editor "vim"
+
+
+to remove locally all merged branches on remote
+
+    git branch --merged >/tmp/merged-branches && \ vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
