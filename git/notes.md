@@ -14,4 +14,8 @@ change editor for commits
 
 to remove locally all merged branches on remote
 
-    git branch --merged >/tmp/merged-branches && \ vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
+    git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
+
+    press :wq to exit
+
+    pending: put in the bash profile
