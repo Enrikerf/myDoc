@@ -90,6 +90,14 @@ fan control
 
 https://gist.github.com/Yatoom/1c80b8afe7fa47a938d3b667ce234559
 
+you need to 
+
+find /sys/devices -type f -name "temp*_input"
+
+sudo vim /etc/thinkfan.conf
+
+sudo service thinkfan start
+
 (0,     0,      35)
 (1,     35,     40)
 (2,     40,     45)
