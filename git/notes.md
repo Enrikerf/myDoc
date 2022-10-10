@@ -14,6 +14,11 @@ change editor for commits
 
 to remove locally all merged branches on remote
 
+    git fetch --prune
+
+    configure to always prune in every fetch:
+    git config --global fetch.prune true
+
     git branch --merged | grep -v "master" >/tmp/merged-branches && vi /tmp/merged-branches && xargs git branch -d </tmp/merged-branches
 
     press :wq to exit

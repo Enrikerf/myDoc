@@ -139,14 +139,14 @@ PS1="$GREEN\u$NO_COLOR:$BLUE\W$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 # with host
 #PS1="$GREEN\u@\h$NO_COLOR:$BLUE\W$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
+#disable terminal sounds
+bind 'set bell-style none'
 
-alias v5='cd ~/scalefast/development-environment'
-alias api='cd ~/scalefast/development-environment/storage/code/api/'
-alias services='cd ~/scalefast/development-environment/storage/code/packages/services' 
-alias models='cd ~/scalefast/development-environment/storage/code/packages/models' 
+#personal alias
 alias phpunit='php ./vendor/bin/phpunit'
 alias phpcs='php ./vendor/bin/phpcs'
 alias phpcbf='php ./vendor/bin/phpcbf'
 alias psalm='php ./vendor/bin/psalm'
+alias work='cd ~/work'
 alias ws='cd ~/workspace'
 alias gu='. /home/kerf/workspace/terminalEnv/scripts/gitUpdater.sh'
