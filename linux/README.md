@@ -105,3 +105,24 @@ sudo service thinkfan start
 (4,     50,     65)
 (5,     65,     70)
 (7,     70,     32767)
+
+
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp6_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp3_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp7_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp4_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp8_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp1_input
+hwmon /sys/devices/platform/thinkpad_hwmon/hwmon/hwmon4/temp5_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp6_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp7_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp4_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp1_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp5_input
+hwmon /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input
+hwmon /sys/devices/pci0000:00/0000:00:1d.0/0000:55:00.0/nvme/nvme0/hwmon3/temp1_input
+hwmon /sys/devices/pci0000:00/0000:00:1d.0/0000:55:00.0/nvme/nvme0/hwmon3/temp2_input
+hwmon /sys/devices/virtual/thermal/thermal_zone0/hwmon1/temp1_input
+hwmon /sys/devices/virtual/thermal/thermal_zone12/hwmon8/temp1_input
+hwmon /sys/devices/virtual/thermal/thermal_zone8/hwmon6/temp1_input

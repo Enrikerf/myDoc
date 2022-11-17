@@ -1,0 +1,10 @@
+1) PR/release en MS -> se deja como esta y se mejorara con sus tests de integracion como tu los has descrito, sus propias fixitures y su base de datos de tests
+2) PR/release en ORCH -> todo igual
+3) queremos ejecutar los tests de QA => 
+    * se ejecuta un proceso por el cual
+        * todas las bases de datos del entorno que elijamos(me quedaria con staging) se hacen un backup de lo que haya para no perderlo
+        * se llenan con la info de testsQA
+        * se ejecuta la suite de postman/calls con una suite the callUrl a ORCH escrita con symfony o como se quiere
+            * estos tests estan tirando de los MS en staging pero con sus bases de datos estables tbn
+            * despues de cada tests (si se requiere) se puede dejar la db como en el estado inical
+        * se recupera la info de staging
