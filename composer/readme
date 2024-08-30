@@ -1,0 +1,16 @@
+
+to check in the terminal the xdebug configuration
+php -r 'xdebug_info();' | less -r
+
+XDEBUG_MODE=profiler docker-compose -f docker-compose.yml up -d -> quick change of the xdebug mode
+
+zend_extension=xdebug
+;xdebug.mode=profile ; with this you got the profiler but can not debug
+;xdebug.mode=debug ; with debug you got the debugger
+xdebug.start_with_request=yes
+xdebug.client_host='host.docker.internal'
+xdebug.client_port=9091
+xdebug.log_level='0'
+xdebug.remote_log="/tmp/xdebug.log"
+xdebug.output_dir = '/var/www/var/log/'
+xdebug.profiler_output_name = cachegrind.out.%u%R

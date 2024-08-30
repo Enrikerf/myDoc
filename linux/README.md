@@ -28,8 +28,9 @@ sudo apt-get install terminator
 
 ## Chrome
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
+> wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+> sudo apt install ./google-chrome-stable_current_amd64.deb
 
 ## <ins>Desktop gui</ins>
 
@@ -75,6 +76,13 @@ but it's strongly not recommended
 ## flickering 
 
 Ubuntu 22.04.1 LTS witth thinkpad 
+
+https://askubuntu.com/questions/1404771/screen-flicker-after-fresh-install-of-ubuntu-22-04
+
+sudo nano /etc/default/grub
+In the grub file, I added to parameter GRUB_CMDLINE_LINUX_DEFAULT the value "i915.enable_dc=0 intel_idle.max_cstate=2". Then saved the file and run:
+
+sudo update-grub
 
 ## thinkfan
 

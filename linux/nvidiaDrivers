@@ -1,0 +1,21 @@
+
+
+(I didn't test this): https://ubuntuforums.org/showthread.php?t=2484863
+
+to disable automatic updates 
+sudo nano /etc/apt/apt.conf.d/20auto-upgrades
+
+```
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Download-Upgradeable-Packages "0";
+APT::Periodic::AutocleanInterval "0";
+APT::Periodic::Unattended-Upgrade "1";
+
+```
+
+to fix the versions of nvidia drivers and don't allow to be updated
+```
+$ sudo apt list nvidia-* --installed
+$ sudo apt list linux-*$(uname -r)* --installed
+$ sudo apt-mark hold package_name
+``````

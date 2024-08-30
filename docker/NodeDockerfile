@@ -1,0 +1,16 @@
+ARG NODE_VERSION
+
+FROM node:${NODE_VERSION} AS base
+
+FROM base AS dev
+
+RUN apt-get update && apt-get install -y vim fish git
+
+USER node
+WORKDIR /app
+
+FROM base AS prod
+
+COPY .  .
+WORKDIR /
+CMD ["npm run start:prod"]
