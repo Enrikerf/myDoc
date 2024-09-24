@@ -24,6 +24,23 @@ sudo apt-get install terminator
 [plugins]
 ```
 
+## fish
+
+```bash
+sudo apt-get update
+```
+
+```bash
+sudo apt install fish
+```
+
+```bash
+chsh -s /usr/bin/fish
+```
+
+```bash
+sudo apt remove --auto-remove fish
+```
 
 
 ## Chrome
